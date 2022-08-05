@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+          
+        }
+        body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("img.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+    font-size: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 50px;
+    font-style: italic;
+
+
+    }
+   
+    .container
+{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: solid lightgray;
+    border-radius: 8px;
+   
+
+
+}
+input[type="Email"]
+{width: 100%;
+  padding: 12px 20px;
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+    
+}
+input[type="text"],select
+
+{   width: 100%;
+  padding: 12px 20px;
+
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+
+}
+
+
+input[type="submit"]
+{
+    background-color: #011401;
+    color: rgb(227, 230, 240);
+    padding: 12px 20px;
+    border:solid;
+    border-radius: 35px;
+    
+    cursor: pointer;
+    font-size: large;
+    width: 100%;
+    font-style: italic;
+    font-size: x-large;
+}
+
+
+
+input[type="submit"]:hover
+{
+    color:rgb(248, 11, 11);
+}
+
+.header
+{
+    
+    text-align: center;
+   color: white; 
+    border-radius: 30px;
+    text-shadow:4px 4px #ff0000;
+    
+    font-size: 200%;
+
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        
+
+
+        <form action="form.php" method="POST">
+            <div class="header">
+                
+            <h1>Contact Form  </h1>
+            </div>
+          
+        
+            <div class="container">
+            <p>Your Name :- </p>
+            <input type="text" name="name" id="name" required   placeholder="Usama Rafiq"  >
+           <p>Your Email:-</p>
+           <input type="Email" name="email" id="Email" required placeholder="abc@gmail.com">
+           <p>Message:-</p>
+             <textarea name="message" id="Message" cols="130" rows="10" placeholder="write your Message"  ></textarea>    
+        
+           <p>subject:-</p>
+           <select name="subject" id="subject" required> 
+            <option value="">--Select a subject Type--</option> 
+            <option value="Registration problem"> Registration problem</option> 
+            <option value="fees problem">fees problem</option>
+            <option value="change section">change section</option>
+            
+     
+        </select>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
